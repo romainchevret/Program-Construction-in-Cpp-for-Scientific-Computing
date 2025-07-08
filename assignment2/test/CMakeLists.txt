@@ -1,0 +1,9 @@
+add_executable(main main.cpp)
+add_executable(performances_capacity performances_capacity.cpp)
+add_executable(performances_points performances_points.cpp)
+add_executable(test_query test_query.cpp)
+
+target_link_libraries(main quadtree)
+target_link_libraries(performances_capacity quadtree)
+target_link_libraries(performances_points quadtree)
+target_link_libraries(test_query quadtree)
