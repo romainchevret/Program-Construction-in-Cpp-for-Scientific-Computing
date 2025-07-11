@@ -23,7 +23,6 @@ void Domain::generateGrid(int n, std::vector<std::vector<double>>& x_grid, std::
         for (int j = 0; j <= n; ++j) {
             double v = j * h;
             Point proj_b = sides[0]->at(u);
-            // std:: cout << proj_b.x <<std::endl;
             Point proj_t = sides[2]->at(u);
             Point proj_l = sides[3]->at(v);
             Point proj_r = sides[1]->at(v);

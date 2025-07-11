@@ -5,7 +5,6 @@
 #include <functional>
 
 Point EquationCurve::at(double t) const {
-    //TODO donner gamma et gammaprime à newton
     auto it = container.find(t);
     if (it != container.end()) {
             return it->second;

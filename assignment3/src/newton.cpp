@@ -13,9 +13,6 @@ double integrateNormFp(const std::function<Point(double)>& fp, double start, dou
 }
 
 double newton(double eps, double s, const std::function<Point(double)>& f, const std::function<Point(double)>& fp){
-    //TESTME
-    // Point fx = f(0.5);
-    // Point fxd = fp(0.5);
     double x = 0.5;
     double arc_length = integrateNormFp(fp, 0, 1);
     double f_norm = integrateNormFp(fp, 0, x);

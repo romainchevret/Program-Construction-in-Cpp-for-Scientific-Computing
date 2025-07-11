@@ -14,12 +14,9 @@ double f(double x){
 }
 
 double fprime(double t){
-    //TODO this is not the derivative of f!
     if (t >= -10 && t < -3) {
-        // return -3*std::exp(3*t)/(2*(1+std::exp(3*t-18)))/(2*(1+std::exp(3*t-18)));
         return 3*std::exp(-3*(t+6))/(2*pow((std::exp(-3*(t+6))+1),2));
     } else if (t >= -3 && t <= 5) {
-        // return -3*std::exp(3*t)/(2*(1+std::exp(3*t)))/(2*(1+std::exp(3*t)));
         return -3*std::exp(3*t)/(2*pow(std::exp(3*t)+1, 2));
     } else {
         throw std::out_of_range("Error : t is outside of boundaries for f");
